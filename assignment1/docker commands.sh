@@ -14,3 +14,5 @@ docker build -t logistic_regression_layered:latest .
 docker run --volume "C:\clayt\OneDrive\Documents\Info Systems\Info Sys A1\IEM4723_ClaytonO_A1\assignment1\layering\data:/home/iem4723/data:home/iem4723/data" logistic_regression_layered:latest python3 /home/iem4723/LogisticRegressor.py
 
 # Question 4
+docker build -t port-listening .
+docker --publish 333:8000 port-listening
